@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Khanyisa Old Age Home provides compassionate care and support for the elderly.">
+<meta name="keywords" content="Old Age Home, Elderly Care, Nursing Home, Khanyisa">
+<meta name="author" content="Njabulo">
+
+
     <title>Khanyisa Old Age Home - Contact</title>
     <link rel="stylesheet" href="styles.css">
+
+  <!-- ✅ Font Awesome - REQUIRED for icons to show -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  
+
 </head>
 <body>
     <header>
@@ -12,13 +29,13 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <a><a href="index.html">Home</a></a>
+        <a><a href="about.html">About Us</a></a>
+        <a><a href="service.html">Services</a></a>
+        <a><a href="gallery.html">Gallery</a></a>
+        <a><a href="contact.html">Contact</a></a>
+    </ul>
     </nav>
 
     <section>
@@ -40,24 +57,42 @@
             <iframe src="https://www.google.com/maps?q=456+Serenity+Avenue,+Cape+Town&output=embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
         </div>
 
-        <h3>Contact Form</h3>
-        <form action="#" method="post">
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+        <form id="contactForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
 
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="10 digits" required>
 
-            <button type="submit">Send Message</button>
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+
             
             <h2>Follow Us</h2>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <div class="social-icons">
+                <a href="https://facebook.com" class="facebook" target="_blank" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="twitter" target="_blank" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" class="instagram" target="_blank" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              
         </form>
     </section>
+    <script src="script.js" defer></script>
+  
+<script>validateForm("contactForm");</script>
+
+
 </body>
 </html>
