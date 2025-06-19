@@ -12,7 +12,6 @@ This project is a fully responsive, user-friendly website for **Khanyisa Old Age
 | `services.html` | List of services offered |
 | `gallery.html` | Image gallery with lightbox |
 | `contact.html` | Contact form with validation |
-| `enquiry.html` | Enquiry form for sponsors/volunteers |
 | `robots.txt` | SEO crawler instructions |
 | `sitemap.xml` | Sitemap for search engines |
 
